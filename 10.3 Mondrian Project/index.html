@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container {
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template: 1fr 1fr / 320px 428px;
+      gap: 9px;
+      background-color: #000;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .sub-div1 {
+      display: grid;
+      grid-template: 295px 21px / 1fr;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .sub-div2 {
+      display: grid;
+      grid-template: 1fr / 360px 50px;
+      background-color: black;
+    }
+
+    .sub-div3 {
+      display: grid;
+      grid-template: 295px 20px / 1fr;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .sub-div4 {
+      display: grid;
+      grid-template: 1fr / 198px 153px;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .sub-div5 {
+      display: grid;
+      grid-template: 130px 184px / 1fr;
+      background-color: black;
+      gap: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red" style="width: 320px; height:414px"></div>
+    <div class="white" style="width: 419px; height: 414px"></div>
+    <div class="white sub-div1">
+      <div class="white"></div>
+      <div class="white"></div>
+    </div>
+    <div class="sub-div2">
+      <div>
+        <div class="sub-div3">
+          <div class="white"></div>
+          <div class="sub-div4">
+            <div style="background-color: #F9D01E"></div>
+            <div style="background-color: #232629"></div>
+          </div>
+        </div>
+        <div class="sub-div5">
+          <div style="background-color: #004592"></div>
+          <div class="white"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
