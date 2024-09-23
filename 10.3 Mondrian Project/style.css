@@ -1,0 +1,85 @@
+body {
+    max-width: 748px;
+    max-height: 748px;
+    min-width: 748px;
+    min-height: 748px;
+    position: absolute;
+    top: 25%;
+    height: 50%;
+    bottom: 25%;
+    left: 25%;
+    width: 50%;
+    right: 25%;
+}
+
+#main-div {
+    display: grid;
+    grid-template: 414px 324px / 1fr;
+    gap: 9px;
+    background-color: black;
+}
+
+.lower_half {
+    display: grid;
+    grid-template: 1fr / 320px 360px 50px;
+    background-color: black;
+    gap: 9px;
+}
+
+.upper_half {
+    display: grid;
+    grid-template: 1fr / 320px 418px;
+    gap:9px;
+    background-color: black;
+}
+
+.lower-left {
+    display: grid;
+    grid-template: 296px 20px / 320px;
+    gap: 9px;
+    background-color: black;
+}
+
+.lower-center {
+    display: grid;
+    grid-template: 296px 20px / 360px;
+    background-color: black;
+    gap: 9px;
+}
+
+.lower-center-div {
+    display: grid;
+    grid-template: 1fr / 198px 153px;
+    background-color: black;
+    gap: 9px;
+}
+
+.lower-right {
+    display: grid;
+    grid-template: 130px 194px / 50px;
+}
+
+.red_box {
+    background-color: #E72F24;
+}
+
+.white_box {
+    background-color: #F0F1EC;
+}
+
+.yellow_box {
+    background-color: #F9D01E;
+}
+
+.black_box {
+    background-color: #232629;
+}
+
+.blue_box {
+    background-color: #004592;
+    border-bottom: 10px solid black;
+}
+
+.lower-right-down.white_box {
+    border-top: 10px solid black;
+}
